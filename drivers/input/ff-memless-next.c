@@ -443,7 +443,7 @@ static s32 mlnx_calculate_ramp(const struct mlnx_effect *mlnxeff)
 static void mlnx_destroy(struct ff_device *dev)
 {
 	struct mlnx_device *mlnxdev = dev->private;
-	del_timer_sync(&mlnxdev->timer);
+	timer_delete_sync(&mlnxdev->timer);
 
 	kfree(mlnxdev->private);
 }
@@ -575,7 +575,7 @@ static void mlnx_schedule_playback(struct mlnx_device *mlnxdev)
 		mod_timer(&mlnxdev->timer, earliest);
 	} else {
 		pr_debug("No events, deactivating timer\n");
-		del_timer(&mlnxdev->timer);
+		timer_delete(&mlnxdev->timer);
 	}
 }
 
