@@ -907,7 +907,7 @@ static int mlnx_startstop(struct input_dev *dev, int effect_id, int repeat)
 
 static void mlnx_timer_fired(struct timer_list* t)
 {
-	struct mlnx_device *ml = from_timer(ml, t, timer);
+	struct mlnx_device *ml = timer_container_of(ml, t, timer);
 	unsigned long flags;
 
 	spin_lock_irqsave(&ml->dev->event_lock, flags);
