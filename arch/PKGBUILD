@@ -6,7 +6,7 @@
 # Maintainer: Franziska Zuccarello <franziska@zuccarello.eu>
 _pkgname=g940-driver
 pkgname=g940-driver-dkms-git
-pkgver=patch.v1.r16.gd7a4249
+pkgver=1.0.0
 pkgrel=1
 pkgdesc="A driver for the Logitech G940 Flight System."
 arch=('x86_64')
