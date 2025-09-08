@@ -3,7 +3,7 @@
 # NOTE: Please fill out the license field for your package! If it is unknown,
 # then please put 'unknown'.
 
-# Maintainer: Timo Zuccarello <timo@zuccarello.eu>
+# Maintainer: Franziska Zuccarello <franziska@zuccarello.eu>
 _pkgname=g940-driver
 pkgname=g940-driver-dkms-git
 pkgver=patch.v1.r16.gd7a4249
